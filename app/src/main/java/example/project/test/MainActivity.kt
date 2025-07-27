@@ -65,7 +65,7 @@ class MainActivity : ComponentActivity() {
                         }
 
                     )
-                    Icon(
+                   // Icon(
                         imageVector = ImageVector.vectorResource(R.drawable.ic_launcher_background),
                         contentDescription = null,
                         modifier = Modifier.size(size = 40.dp).clickable { }
