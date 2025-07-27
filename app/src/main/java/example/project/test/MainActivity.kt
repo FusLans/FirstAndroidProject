@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity() {
                         verticalArrangement = Arrangement.SpaceEvenly
                     ) {
 
-                    //TextField(
+                    TextField(
                         value = mainViewModel.textNow,
                         modifier = Modifier.padding(Innerpadding),
                         onValueChange = { inputText: String ->
