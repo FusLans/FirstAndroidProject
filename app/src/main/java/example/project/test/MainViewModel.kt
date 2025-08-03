@@ -10,10 +10,16 @@ import androidx.lifecycle.ViewModel
 class MainViewModel : ViewModel() {
     var list = mutableStateListOf("")
         private set
-    var newValue by mutableStateOf("")
-    fun onNewList(newListNow: String) {
+    var value by mutableStateOf("")
+        private set
 
-        list.add(newListNow)
+    fun onNewList() {
+        list.add(value)
+        value = ""
+    }
+
+    fun changeValue(newValue: String) {
+        value = newValue
     }
 
 }
